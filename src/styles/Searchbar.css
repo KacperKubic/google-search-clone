@@ -1,0 +1,26 @@
+.searchbar-input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    padding: 10px 20px;
+    width: 75vw;
+    margin: 0 auto;
+    height: 25px;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.searchbar-input input{
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+}
+
+.searchbar-input input:focus{
+    outline-width: 0;
+}
+
+.searchbar-input .input-icon{
+    color: lightgrey;
+}
