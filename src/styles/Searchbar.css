@@ -6,7 +6,7 @@
     padding: 10px 20px;
     width: 75vw;
     margin: 0 auto;
-    height: 25px;
+    height: 22px;
     margin-top: 40px;
     max-width: 600px;
 }
@@ -22,5 +22,30 @@
 }
 
 .searchbar-input .input-icon{
-    color: lightgrey;
+    color: #e9e0e0;
+}
+
+.searchbar-buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar-buttons button{
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid white;
+    color: #222;
+}
+
+.searchbar-buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #c6c6c6;
+    background-color: #f4f4f4;
+}
+
+.searchbar-buttons .hidden{
+    display: none !important;
 }
