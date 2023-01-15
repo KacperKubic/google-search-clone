@@ -1,0 +1,81 @@
+.results-header{
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.results-header img{
+    object-fit: contain;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.results-header-content .searchbar .searchbar-input{
+    margin: unset;
+    width: unset;
+    max-width: unset;
+}
+
+.results-header-options{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.results-header-option{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.results-header-option p{
+    margin-left: 5px;
+    color: gray;
+}
+
+.tools{
+    margin-left: 30px;
+}
+
+.results-data{
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.results-data-stats{
+    font-size: 14px;
+    color: #70757a;
+}
+
+.results-item{
+    margin: 40px 0;
+}
+
+.results-item-display-link{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+.results-item-title{
+    text-decoration: none;
+}   
+
+.results-item-title h3{
+    font-weight: 400;
+}
+
+.results-item h2:hover{
+    text-decoration: underline;
+}
+
+.results-item-desc{
+    color: #333333;
+}
+
+

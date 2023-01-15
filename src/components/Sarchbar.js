@@ -11,12 +11,16 @@ const Searchbar = ({hideButtons = false}) => {
 
     const googleSearch = (e) => {
         e.preventDefault();
-        setSearchTerm(inputValue);
-        navigate("/results");
+        if(inputValue === ""){
+            return;
+        }else{
+            setSearchTerm(inputValue);
+            navigate("/results");
+        }
     }
 
     return ( 
-        <div className="searchar">
+        <div className="searchbar">
             <form onSubmit={googleSearch}>
                 <div className="searchbar-input">
                     <GrSearch className="input-icon"/>
