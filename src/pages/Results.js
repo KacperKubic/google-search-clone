@@ -7,6 +7,7 @@ import { TermContext } from "../Context";
 import Searchbar from '../components/Sarchbar';
 import '../styles/Results.css';
 import defaultResults from "../defaultResults";
+import { API_KEY, CONTEXT_KEY } from "../API";
 
 const Results = () => {
     const { searchTerm } = useContext(TermContext);
@@ -16,7 +17,7 @@ const Results = () => {
     //Runs on first load and everytime the global searchTerm changes
     useEffect(() => {
         //Google Custom Search API request with provided API key, custom search context key and search term
-        axios.get(`https://www.googleapis.com/customsearch/v1?key=${process.env.REACT_APP_API_KEY}&cx=${process.env.REACT_APP_CONTEXT_KEY}&q=${searchTerm}`).then(response => {
+        axios.get(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchTerm}`).then(response => {
             //If there was no error set response to results variable
             setResults(response.data);
             setLoading(false);
